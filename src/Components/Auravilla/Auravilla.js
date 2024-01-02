@@ -4,8 +4,7 @@ import { motion, useInView, useAnimation } from "framer-motion";
 import { Stack } from "@mui/material";
 import Box from "@mui/material/Box";
 
-// import bannerImage from "../../Images/heros/prani.png";
-import bannerImage from "../../Images/heros/prani2.jpg";
+import bannerImage from "../../Images/heros/Auravilla.jpeg";
 import qrCode from "../../Images/heros/praniQRCode.PNG";
 
 function Sai() {
@@ -61,67 +60,85 @@ function Sai() {
         }}
       >
         <Stack
-          direction="row"
-          sx={{
-            width: "90%",
-            // backgroundColor: "yellow",
-            justifyContent: "space-around",
-            margin: "auto",
-          }}
+          direction="column"
+          sx={{ gap: "6ch", justifyContent: "space-between" }}
         >
-          <Stack direction="column" sx={{ justifyContent: "center" }}>
-            <img
-              src={bannerImage}
-              style={{ objectFit: "fill", maxWidth: "50ch" }}
-            ></img>
-          </Stack>
-          <Stack
-            direction="column"
+          <Typography
+            variant="h2"
             sx={{
-              // backgroundColor: "orange",
-              justifyContent: "space-around",
+              fontFamily: "'Oswald', sans-serif",
+              letterSpacing: "0.2ch",
               textAlign: "center",
             }}
           >
-            <Typography
-              variant="h2"
+            AuraVilla
+          </Typography>
+          <Stack
+            sx={{
+              width: "90%",
+              // backgroundColor: "yellow",
+              justifyContent: "space-around",
+              margin: "auto",
+              display: "flex",
+              gap: "2ch",
+              flexDirection: {
+                xs: "column",
+                md: "row",
+              },
+            }}
+          >
+            <Stack
+              direction="column"
+              sx={{ justifyContent: "center", alignItems: "center" }}
+            >
+              <img
+                src={bannerImage}
+                style={{
+                  objectFit: "fill",
+                  maxWidth: "50ch",
+                  maxHeight: "50ch",
+                }}
+              ></img>
+            </Stack>
+            <Stack
+              direction="column"
               sx={{
-                fontFamily: "'Oswald', sans-serif",
-                letterSpacing: "0.2ch",
+                // backgroundColor: "orange",
+                justifyContent: "space-around",
+                textAlign: "center",
               }}
             >
-              AuraVilla
-            </Typography>
-            <Typography
-              variant="body"
-              sx={{
-                letterSpacing: "0.2ch",
-              }}
-            >
-              AuraVilla is a cat homestay or cat boarding service for pet house
-              cats, located in Chennai. DM us if
-            </Typography>
-            <Typography variant="body" sx={{ color: "blue" }}>
-              <a
-                href="https://www.instagram.com/auravilla_cathomestay_chennai/?igsh=eHc2MGhpM2owenhz"
-                target="_blank"
-                style={{ color: "blue" }}
+              <Typography
+                variant="body"
+                sx={{
+                  letterSpacing: "0.2ch",
+                }}
               >
-                Instagram
-              </a>
-            </Typography>
-            <Typography variant="body" sx={{ color: "blue" }}>
-              <a
-                href="https://www.facebook.com/AuraVilla2021/"
-                target="_blank"
-                style={{ color: "blue" }}
-              >
-                Facebook
-              </a>
-            </Typography>
-            <Typography variant="body">
-              Please donate to prani.62725560@hdfcbank if you can!
-            </Typography>
+                AuraVilla is a cat homestay or cat boarding service for pet
+                house cats, located in Chennai. DM us if
+              </Typography>
+              <Typography variant="body" sx={{ color: "blue" }}>
+                <a
+                  href="https://www.instagram.com/auravilla_cathomestay_chennai/?igsh=eHc2MGhpM2owenhz"
+                  target="_blank"
+                  style={{ color: "blue" }}
+                >
+                  Instagram
+                </a>
+              </Typography>
+              <Typography variant="body" sx={{ color: "blue" }}>
+                <a
+                  href="https://www.facebook.com/AuraVilla2021/"
+                  target="_blank"
+                  style={{ color: "blue" }}
+                >
+                  Facebook
+                </a>
+              </Typography>
+              <Typography variant="body">
+                Please donate to menhir2021@okhdfcbank if you can!
+              </Typography>
+            </Stack>
           </Stack>
         </Stack>
       </motion.div>

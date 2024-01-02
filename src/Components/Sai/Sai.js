@@ -58,72 +58,87 @@ function Sai() {
         }}
       >
         <Stack
-          sx={{
-            width: "90%",
-            // backgroundColor: "yellow",
-            justifyContent: "space-around",
-            margin: "auto",
-            display: "flex",
-            flexDirection: {
-              xs: "column",
-              md: "row",
-            },
-          }}
+          direction="column"
+          sx={{ gap: "6ch", justifyContent: "space-between" }}
         >
-          <Stack direction="column" sx={{ justifyContent: "center" }}>
-            <img
-              src={bannerImage}
-              style={{ objectFit: "fill", maxWidth: "50ch" }}
-            ></img>
-          </Stack>
-          <Stack
-            direction="column"
+          <Typography
+            variant="h2"
             sx={{
-              // backgroundColor: "orange",
-              justifyContent: "space-around",
+              fontFamily: "'Oswald', sans-serif",
+              letterSpacing: "0.2ch",
+              margin: "auto",
               textAlign: "center",
             }}
           >
-            <Typography
-              variant="h2"
+            Almighty Animal Sanctuary
+          </Typography>
+          <Stack
+            sx={{
+              width: "90%",
+              // backgroundColor: "yellow",
+              justifyContent: "space-around",
+              margin: "auto",
+              display: "flex",
+              gap: "2ch",
+              flexDirection: {
+                xs: "column",
+                md: "row",
+              },
+            }}
+          >
+            <Stack
+              direction="column"
+              sx={{ justifyContent: "center", alignItems: "center" }}
+            >
+              <img
+                src={bannerImage}
+                style={{
+                  objectFit: "fill",
+                  maxWidth: "50ch",
+                  maxHeight: "50ch",
+                }}
+              ></img>
+            </Stack>
+            <Stack
+              direction="column"
               sx={{
-                fontFamily: "'Oswald', sans-serif",
-                letterSpacing: "0.2ch",
+                // backgroundColor: "orange",
+                justifyContent: "space-around",
+                textAlign: "center",
               }}
             >
-              Almighty Animal Sanctuary
-            </Typography>
-            <Typography
-              variant="body"
-              sx={{
-                letterSpacing: "0.2ch",
-              }}
-            >
-              Their primary service revolves around rescuing injured and
-              distressed animals while helping people to realise and retrieve
-              their hidden compassion for all living beings...
-            </Typography>
-            <Typography variant="body" sx={{ color: "blue" }}>
-              <a
-                href="https://www.instagram.com/almightyanimalcaretrust/?hl=en"
-                target="_blank"
-                style={{ color: "blue" }}
+              <Typography
+                variant="body"
+                sx={{
+                  letterSpacing: "0.2ch",
+                }}
               >
-                Instagram
-              </a>
-            </Typography>
-            <Typography variant="body" sx={{ color: "blue" }}>
-              <a
-                href="https://www.almightyanimalsanctuary.org/"
-                target="_blank"
-                style={{ color: "blue" }}
-              >
-                Website
-              </a>
-            </Typography>
-            <Typography variant="body">
-              Please donate to AlmightyAnimalCareTrust.ibz@icici if you can!
-            </Typography>
+                Their primary service revolves around rescuing injured and
+                distressed animals while helping people to realise and retrieve
+                their hidden compassion for all living beings...
+              </Typography>
+              <Typography variant="body" sx={{ color: "blue" }}>
+                <a
+                  href="https://www.instagram.com/almightyanimalcaretrust/?hl=en"
+                  target="_blank"
+                  style={{ color: "blue" }}
+                >
+                  Instagram
+                </a>
+              </Typography>
+              <Typography variant="body" sx={{ color: "blue" }}>
+                <a
+                  href="https://www.almightyanimalsanctuary.org/"
+                  target="_blank"
+                  style={{ color: "blue" }}
+                >
+                  Website
+                </a>
+              </Typography>
+              <Typography variant="body">
+                Please donate to AlmightyAnimalCareTrust.ibz@icici if you can!
+              </Typography>
+            </Stack>
           </Stack>
         </Stack>
       </motion.div>
