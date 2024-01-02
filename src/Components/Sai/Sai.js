@@ -58,12 +58,16 @@ function Sai() {
         }}
       >
         <Stack
-          direction="row"
           sx={{
             width: "90%",
             // backgroundColor: "yellow",
             justifyContent: "space-around",
             margin: "auto",
+            display: "flex",
+            flexDirection: {
+              xs: "column",
+              md: "row",
+            },
           }}
         >
           <Stack direction="column" sx={{ justifyContent: "center" }}>
