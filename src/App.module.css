@@ -1,0 +1,105 @@
+* {
+  /* outline:solid; */
+  text-decoration-line: none;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+
+.container {
+  /* min-height: 100svh; */
+  display: grid;
+  grid-template-rows: min-content minmax(50ch, 1fr);
+  gap: 0ch;
+  /* gap:3ch; */
+  outline-color: aqua;
+}
+
+.navBar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5ch, min-content));
+  /* justify-content :center; */
+  place-content: center;
+  place-items: center;
+  text-align: center;
+  gap: 5ch;
+  /* background-color:rgba(10, 10, 10,0.6); */
+  background-color: rgba(250, 0, 0, 0.6);
+  color: black;
+  /* outline:solid; */
+  /* outline-color:white; */
+}
+
+.themeContainer {
+  display: grid;
+  grid-template-columns: 3ch 3ch;
+  /* place-items:center;
+    place-content:center; */
+  gap: 0.5ch;
+  place-self: end;
+  /* outline:auto red; */
+}
+
+.link {
+  transition: transform linear 0.2s;
+}
+.link:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.buttonLight {
+  transition: transform ease-in-out 1s;
+}
+
+.buttonLight:hover {
+  /* filter: saturate(10%); */
+  filter: brightness(90%);
+}
+
+.buttonDark {
+  transition: transform ease-in-out 1s;
+}
+
+.buttonDark:hover {
+  filter: brightness(200%);
+}
+
+@media only screen and (max-width: 560px) {
+  .container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: min-content minmax(50ch, 1fr);
+    /* gap:3ch; */
+    /* background-color: blue; */
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    /* font-style:italic; */
+    /* outline-color: aqua; */
+    max-height: 100vh;
+    /* background-image: url("./Images/portfolio/intro_mobile_1.jpg");
+    background-size: cover; */
+  }
+
+  .navBar {
+    font-size: 0.8rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit);
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    /* justify-content :center; */
+    place-content: center;
+    /* gap:1ch;     */
+    gap: 2ch;
+    /* background-color:rgba(10, 10, 10,0.6); */
+    background-color: rgba(250, 0, 0, 0.6);
+    /* color:rgb(245, 69, 0); */
+    /* outline:solid; */
+    /* outline-color:white; */
+  }
+
+  .themeContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* place-items:center;
+        place-content:center; */
+    gap: 0ch;
+    place-self: end;
+    /* outline:auto red; */
+  }
+}

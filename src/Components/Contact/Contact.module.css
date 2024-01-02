@@ -1,0 +1,28 @@
+.container {
+  display: grid;
+  grid-template-rows: 3ch;
+  place-content: center;
+  color: white;
+  max-height: 100vh;
+}
+
+.mailId {
+  display: grid;
+  grid-template-columns: 3ch minmax(20ch, 1fr);
+  gap: 0.5ch;
+  place-items: end center;
+}
+
+.mailIcon {
+  margin-bottom: 0ch;
+}
+
+@media only screen and (max-width: 560px) {
+  .mailId > span {
+    /* display:grid;
+    grid-template-rows: auto auto; */
+    font-size: 0.8rem;
+    /* gap:0ch; */
+    /* background-color: aqua; */
+  }
+}
