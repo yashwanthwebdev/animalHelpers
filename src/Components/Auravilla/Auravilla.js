@@ -115,7 +115,7 @@ function Sai() {
                 }}
               >
                 AuraVilla is a cat homestay or cat boarding service for pet
-                house cats, located in Chennai. DM us if
+                house cats, located in Chennai.
               </Typography>
               <Typography variant="body" sx={{ color: "blue" }}>
                 <a
