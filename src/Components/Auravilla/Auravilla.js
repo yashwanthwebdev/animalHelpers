@@ -69,6 +69,10 @@ function Sai() {
               fontFamily: "'Oswald', sans-serif",
               letterSpacing: "0.2ch",
               textAlign: "center",
+              fontSize: {
+                xs: "1.5rem",
+                md: "3rem",
+              },
             }}
           >
             AuraVilla

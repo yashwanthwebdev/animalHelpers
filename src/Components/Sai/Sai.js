@@ -68,6 +68,10 @@ function Sai() {
               letterSpacing: "0.2ch",
               margin: "auto",
               textAlign: "center",
+              fontSize: {
+                xs: "1.5rem",
+                md: "3rem",
+              },
             }}
           >
             Almighty Animal Sanctuary
@@ -79,7 +83,10 @@ function Sai() {
               justifyContent: "space-around",
               margin: "auto",
               display: "flex",
-              gap: "2ch",
+              gap: {
+                xs: "0ch",
+                md: "2ch",
+              },
               flexDirection: {
                 xs: "column",
                 md: "row",
@@ -114,8 +121,7 @@ function Sai() {
                 }}
               >
                 Their primary service revolves around rescuing injured and
-                distressed animals while helping people to realise and retrieve
-                their hidden compassion for all living beings...
+                distressed animals.
               </Typography>
               <Typography variant="body" sx={{ color: "blue" }}>
                 <a
@@ -136,7 +142,7 @@ function Sai() {
                 </a>
               </Typography>
               <Typography variant="body">
-                Please donate to AlmightyAnimalCareTrust.ibz@icici if you can!
+                Please donate to AlmightyAnimalCareTrust.ibz@icici !
               </Typography>
             </Stack>
           </Stack>
