@@ -119,9 +119,8 @@ function Sai() {
                   letterSpacing: "0.2ch",
                 }}
               >
-                They are an NGO run by two women trying to make a difference in
-                the lives of street animals in distress - especially rescue of
-                injured animals and Sterilization
+                They are an NGO run by two women who rescue injured animals and
+                sterilize.
               </Typography>
               <Typography variant="body" sx={{ color: "blue" }}>
                 <a
