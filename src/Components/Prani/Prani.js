@@ -82,7 +82,15 @@ function Sai() {
             sx={{
               width: "90%",
               // backgroundColor: "yellow",
-              justifyContent: "space-around",
+              justifyContent: {
+                xs: "space-between",
+                md: "space-around",
+              },
+              alignItems: {
+                xs: "center",
+                md: "space-around",
+              },
+
               margin: "auto",
               display: "flex",
               gap: "2ch",
@@ -94,14 +102,25 @@ function Sai() {
           >
             <Stack
               direction="column"
-              sx={{ justifyContent: "center", alignItems: "center" }}
+              sx={{
+                justifyContent: "center",
+                alignItems: "center",
+                width: {
+                  xs: "20ch",
+                  md: "50ch",
+                },
+                height: {
+                  xs: "20ch",
+                  md: "50ch",
+                },
+              }}
             >
               <img
                 src={bannerImage}
                 style={{
                   objectFit: "fill",
-                  maxWidth: "50ch",
-                  maxHeight: "50ch",
+                  height: "100%",
+                  width: "100%",
                 }}
               ></img>
             </Stack>
