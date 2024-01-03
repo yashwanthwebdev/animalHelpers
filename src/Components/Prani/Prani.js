@@ -3,8 +3,6 @@ import Typography from "@mui/material/Typography";
 import { motion, useInView, useAnimation } from "framer-motion";
 import { Stack } from "@mui/material";
 import Box from "@mui/material/Box";
-
-// import bannerImage from "../../Images/heros/prani.png";
 import bannerImage from "../../Images/heros/prani2.jpg";
 import qrCode from "../../Images/heros/praniQRCode.PNG";
 
@@ -30,7 +28,7 @@ function Sai() {
         backgroundSize: "cover",
         justifyContent: "center",
         alignItems: "center",
-        // backgroundColor: "red",
+
         fontFamily: "'Oswald', sans-serif",
       }}
     >
@@ -58,17 +56,24 @@ function Sai() {
         style={{
           // backgroundColor: "purple",
           width: "100%",
+          height: "90%",
         }}
       >
         <Stack
           direction="column"
-          sx={{ gap: "6ch", justifyContent: "space-between" }}
+          sx={{
+            // gap: "6ch",
+            justifyContent: "space-around",
+
+            height: "100%",
+          }}
         >
           <Typography
             variant="h2"
             sx={{
               fontFamily: "'Oswald', sans-serif",
               letterSpacing: "0.2ch",
+
               textAlign: "center",
               fontSize: {
                 xs: "1.5rem",
@@ -81,7 +86,6 @@ function Sai() {
           <Stack
             sx={{
               width: "90%",
-              // backgroundColor: "yellow",
               justifyContent: {
                 xs: "space-between",
                 md: "space-around",
@@ -90,10 +94,12 @@ function Sai() {
                 xs: "center",
                 md: "space-around",
               },
-
-              margin: "auto",
+              marginInline: "auto",
               display: "flex",
-              gap: "2ch",
+              gap: {
+                xs: "5ch",
+                md: "2ch",
+              },
               flexDirection: {
                 xs: "column",
                 md: "row",
@@ -121,15 +127,16 @@ function Sai() {
                   objectFit: "fill",
                   height: "100%",
                   width: "100%",
+                  borderRadius: "1.5ch",
                 }}
               ></img>
             </Stack>
             <Stack
               direction="column"
               sx={{
-                // backgroundColor: "orange",
                 justifyContent: "space-around",
                 textAlign: "center",
+                gap: "2ch",
               }}
             >
               <Typography
@@ -141,6 +148,7 @@ function Sai() {
                 They are an NGO run by two women who rescue injured animals and
                 sterilize.
               </Typography>
+
               <Typography variant="body" sx={{ color: "blue" }}>
                 <a
                   href="https://www.instagram.com/prani_animaltrust/?igsh=MWZ6bWluZWxmMmh5MQ%3D%3D"

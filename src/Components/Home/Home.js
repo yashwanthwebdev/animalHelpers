@@ -11,7 +11,7 @@ import Auravilla from "../Auravilla/Auravilla";
 
 function Home(props) {
   return (
-    <Stack style={{ width: "100%", outline: "2px red solid" }}>
+    <Stack style={{ width: "100%" }}>
       <Sai />
       <Prani />
       <Auravilla />
