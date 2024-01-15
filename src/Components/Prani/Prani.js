@@ -166,8 +166,7 @@ function Sai() {
                   fontWeight: "800",
                 }}
               >
-                Please donate how much ever you can to prani.62725560@hdfcbank
-                if you can!
+                Please donate how much ever you can to prani.62725560@hdfcbank !
               </Typography>
               <img
                 src={qrCode}

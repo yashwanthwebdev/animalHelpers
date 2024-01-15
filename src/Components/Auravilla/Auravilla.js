@@ -178,8 +178,7 @@ function Sai() {
                   fontWeight: "800",
                 }}
               >
-                Please donate how much ever you can to menhir2021@okhdfcbank if
-                you can!
+                Please donate how much ever you can to menhir2021@okhdfcbank !
               </Typography>
             </Stack>
           </Stack>
