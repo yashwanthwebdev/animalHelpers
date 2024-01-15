@@ -65,6 +65,12 @@ function App() {
               right: "2%",
               top: "30%",
               color: "teal",
+              animation: "blinking 1.5s infinite", // Name of the animation, duration, and iteration count
+              "@keyframes blinking": {
+                "0%": { opacity: 1 },
+                "50%": { opacity: 0 },
+                "100%": { opacity: 1 },
+              },
             }}
           />
         </IconButton>
@@ -78,6 +84,12 @@ function App() {
               right: "2%",
               bottom: "30%",
               color: "teal",
+              animation: "blinking 1.5s infinite", // Name of the animation, duration, and iteration count
+              "@keyframes blinking": {
+                "0%": { opacity: 1 },
+                "50%": { opacity: 0 },
+                "100%": { opacity: 1 },
+              },
             }}
           />
         </IconButton>
