@@ -182,10 +182,9 @@ function Sai() {
               <Typography
                 variant="body"
                 sx={{
-                  color: "#45b3e0",
+                  // color: "#45b3e0",
                   color: "#197195",
                   fontWeight: "600",
-                  filter: "brightness(1)",
                 }}
               >
                 Please donate how much ever you can to
@@ -198,7 +197,6 @@ function Sai() {
                   sx={{
                     color: "#87CEEB",
                     // color: "green",
-                    filter: "brightness(1)",
                     fontWeight: "800",
                   }}
                 >

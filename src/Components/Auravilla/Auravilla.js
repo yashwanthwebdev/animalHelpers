@@ -10,6 +10,26 @@ function Sai() {
   const mainRef = useRef(null);
   const isInView = useInView(mainRef, { once: false });
 
+  const textRef = useRef(null);
+  const handleCopyClick = () => {
+    // Select the text
+    const textToCopy = textRef.current.innerText;
+    const selection = window.getSelection();
+    const range = document.createRange();
+    range.selectNodeContents(textRef.current);
+    selection.removeAllRanges();
+    selection.addRange(range);
+
+    // Execute the copy command
+    document.execCommand("copy");
+
+    // Clear the selection
+    selection.removeAllRanges();
+
+    // Optionally, you can provide user feedback (e.g., show a notification)
+    console.log("Text copied to clipboard:", textToCopy);
+  };
+
   useEffect(() => {
     if (isInView) {
       mainControls.start("visible");
@@ -174,11 +194,26 @@ function Sai() {
               <Typography
                 variant="body"
                 sx={{
-                  color: "#87CEEB",
-                  fontWeight: "800",
+                  // color: "#45b3e0",
+                  color: "#197195",
+                  fontWeight: "600",
                 }}
               >
-                Please donate how much ever you can to menhir2021@okhdfcbank !
+                Please donate how much ever you can to
+                <Typography
+                  variant="body"
+                  ref={textRef}
+                  // onClick={handleCopyClick}
+                  onMouseDown={handleCopyClick}
+                  paragraph={true}
+                  sx={{
+                    color: "#87CEEB",
+                    // color: "green",
+                    fontWeight: "800",
+                  }}
+                >
+                  menhir2021@okhdfcbank
+                </Typography>
               </Typography>
             </Stack>
           </Stack>
