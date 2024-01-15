@@ -152,7 +152,7 @@ function Sai() {
                 <a
                   href="https://www.instagram.com/almightyanimalcaretrust/?hl=en"
                   target="_blank"
-                  style={{ color: "blue" }}
+                  style={{ color: "#DA70D6" }}
                 >
                   Instagram
                 </a>
@@ -161,13 +161,14 @@ function Sai() {
                 <a
                   href="https://www.almightyanimalsanctuary.org/"
                   target="_blank"
-                  style={{ color: "blue" }}
+                  style={{ color: "#DA70D6" }}
                 >
                   Website
                 </a>
               </Typography>
               <Typography variant="body">
-                Please donate to AlmightyAnimalCareTrust.ibz@icici if you can !
+                Please donate how much ever you can to
+                AlmightyAnimalCareTrust.ibz@icici !
               </Typography>
             </Stack>
           </Stack>

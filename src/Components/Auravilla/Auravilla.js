@@ -154,7 +154,9 @@ function Sai() {
                 <a
                   href="https://www.instagram.com/auravilla_cathomestay_chennai/?igsh=eHc2MGhpM2owenhz"
                   target="_blank"
-                  style={{ color: "blue" }}
+                  style={{
+                    color: "#DA70D6",
+                  }}
                 >
                   Instagram
                 </a>
@@ -163,13 +165,14 @@ function Sai() {
                 <a
                   href="https://www.facebook.com/AuraVilla2021/"
                   target="_blank"
-                  style={{ color: "blue" }}
+                  style={{ color: "#DA70D6" }}
                 >
                   Facebook
                 </a>
               </Typography>
               <Typography variant="body">
-                Please donate to menhir2021@okhdfcbank if you can!
+                Please donate how much ever you can to menhir2021@okhdfcbank if
+                you can!
               </Typography>
             </Stack>
           </Stack>

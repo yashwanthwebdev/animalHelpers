@@ -10,6 +10,13 @@ import abstract_mobile from "./Images/portfolio/abstract_mobile.jpg";
 import hanging_flowers_mobile from "./Images/portfolio/hanging_flowers_mobile.jpg";
 import intro_mobile_1 from "./Images/portfolio/intro_mobile_1.jpg";
 import plants_1 from "./Images/portfolio/plants_1.jpg";
+import { SwipeDown } from "@mui/icons-material";
+import SwipeVerticalIcon from "@mui/icons-material/SwipeVertical";
+import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
+import PanToolAltIcon from "@mui/icons-material/PanToolAlt";
+import KeyboardDoubleArrowUpIcon from "@mui/icons-material/KeyboardDoubleArrowUp";
+import Tooltip from "@mui/material/Tooltip";
+import IconButton from "@mui/material/IconButton";
 
 function App() {
   const [backgroundColor, setBackgroundColor] = useState(
@@ -36,9 +43,10 @@ function App() {
         scrollSnapAlign: "start",
         scrollSnapStop: "always",
         backgroundSize: "cover",
+        position: "relative",
       }}
     >
-      <Stack
+      {/* <Stack
         direction="row"
         justifyContent="end"
         style={{
@@ -46,8 +54,27 @@ function App() {
           justifyContent: "end",
           placeSelf: "end",
         }}
-      ></Stack>
+      ></Stack> */}
       <Home theme={theme} />
+      <Tooltip title="Swipe up" sx={{ cursor: "default" }}>
+        <IconButton>
+          <KeyboardDoubleArrowUpIcon
+            sx={{ position: "fixed", right: "2%", top: "10%", color: "teal" }}
+          />
+        </IconButton>
+      </Tooltip>
+      <Tooltip title="Swipe up" sx={{ cursor: "default" }}>
+        <IconButton>
+          <KeyboardDoubleArrowDownIcon
+            sx={{
+              position: "fixed",
+              right: "2%",
+              bottom: "10%",
+              color: "teal",
+            }}
+          />
+        </IconButton>
+      </Tooltip>
     </Stack>
   );
 }

@@ -153,13 +153,14 @@ function Sai() {
                 <a
                   href="https://www.instagram.com/prani_animaltrust/?igsh=MWZ6bWluZWxmMmh5MQ%3D%3D"
                   target="_blank"
-                  style={{ color: "blue" }}
+                  style={{ color: "#DA70D6" }}
                 >
                   Instagram
                 </a>
               </Typography>
               <Typography variant="body">
-                Please donate to prani.62725560@hdfcbank if you can!
+                Please donate how much ever you can to prani.62725560@hdfcbank
+                if you can!
               </Typography>
               <img
                 src={qrCode}
