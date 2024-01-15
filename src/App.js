@@ -46,15 +46,31 @@ function App() {
         position: "relative",
       }}
     >
-      {/* <Stack
-        direction="row"
-        justifyContent="end"
-        style={{
+      <Typography
+        variant="h1"
+        sx={{
+          fontFamily: "'Oswald', sans-serif",
+          letterSpacing: "0.2ch",
+          textAlign: "center",
+          fontSize: {
+            xs: "2rem",
+            md: "3.5rem",
+          },
+          marginTop: "0ch",
           position: "fixed",
-          justifyContent: "end",
-          placeSelf: "end",
+          marginInline: "auto",
+          alignSelf: "center",
+          // letterSpacing: "1.2ch",
+          // wordSpacing: "3ch",
+          backgroundColor: "black",
+          width: "100%",
+          color: "white",
+          zIndex: "999",
         }}
-      ></Stack> */}
+      >
+        Allies of Animals
+        {/* Compassionate caretakers of Animals */}
+      </Typography>
       <Home theme={theme} />
       <Tooltip title="Swipe up" sx={{ cursor: "default" }}>
         <IconButton>

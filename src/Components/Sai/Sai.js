@@ -92,13 +92,14 @@ function Sai() {
             sx={{
               fontFamily: "'Oswald', sans-serif",
               letterSpacing: "0.2ch",
-
               textAlign: "center",
               fontSize: {
-                xs: "1.5rem",
-                md: "3rem",
+                // xs: "1.5rem",
+                // md: "3rem",
+                xs: "1.2rem",
+                md: "2.5rem",
               },
-              // color: "#87CEEB",
+              padding: "1ch",
             }}
           >
             Almighty Animal Sanctuary
