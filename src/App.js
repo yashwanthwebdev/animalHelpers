@@ -72,25 +72,6 @@ function App() {
         {/* Compassionate caretakers of Animals */}
       </Typography>
       <Home theme={theme} />
-      {/* <Tooltip title="Swipe up" sx={{ cursor: "default" }}>
-        <IconButton>
-          <KeyboardDoubleArrowUpIcon
-            fontSize="large"
-            sx={{
-              position: "fixed",
-              right: "2%",
-              top: "30%",
-              color: "teal",
-              animation: "blinking 1.5s infinite", // Name of the animation, duration, and iteration count
-              "@keyframes blinking": {
-                "0%": { opacity: 1 },
-                "50%": { opacity: 0 },
-                "100%": { opacity: 1 },
-              },
-            }}
-          />
-        </IconButton>
-      </Tooltip> */}
 
       <Tooltip title="Swipe up" sx={{ cursor: "default" }}>
         <IconButton>

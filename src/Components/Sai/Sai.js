@@ -94,10 +94,8 @@ function Sai() {
               letterSpacing: "0.2ch",
               textAlign: "center",
               fontSize: {
-                // xs: "1.5rem",
-                // md: "3rem",
-                xs: "1.2rem",
-                md: "2.5rem",
+                xs: "1.5rem",
+                md: "3rem",
               },
               padding: "1ch",
             }}
