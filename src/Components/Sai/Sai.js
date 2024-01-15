@@ -78,6 +78,7 @@ function Sai() {
                 xs: "1.5rem",
                 md: "3rem",
               },
+              color: "#87CEEB",
             }}
           >
             Almighty Animal Sanctuary
@@ -143,6 +144,7 @@ function Sai() {
                 variant="body"
                 sx={{
                   letterSpacing: "0.2ch",
+                  color: "#36454F",
                 }}
               >
                 Their primary service revolves around rescuing injured and
