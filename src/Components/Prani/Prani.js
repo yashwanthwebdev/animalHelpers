@@ -198,6 +198,7 @@ function Sai() {
                     color: "#87CEEB",
                     // color: "green",
                     fontWeight: "800",
+                    textDecoration: "underline",
                   }}
                 >
                   prani.62725560@hdfcbank

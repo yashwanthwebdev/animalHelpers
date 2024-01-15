@@ -59,13 +59,20 @@ function App() {
       <Tooltip title="Swipe up" sx={{ cursor: "default" }}>
         <IconButton>
           <KeyboardDoubleArrowUpIcon
-            sx={{ position: "fixed", right: "2%", top: "30%", color: "teal" }}
+            fontSize="large"
+            sx={{
+              position: "fixed",
+              right: "2%",
+              top: "30%",
+              color: "teal",
+            }}
           />
         </IconButton>
       </Tooltip>
       <Tooltip title="Swipe up" sx={{ cursor: "default" }}>
         <IconButton>
           <KeyboardDoubleArrowDownIcon
+            fontSize="large"
             sx={{
               position: "fixed",
               right: "2%",
