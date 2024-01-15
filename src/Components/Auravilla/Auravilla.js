@@ -143,6 +143,7 @@ function Sai() {
                 variant="body"
                 sx={{
                   letterSpacing: "0.2ch",
+                  color: "#36454F",
                 }}
               >
                 AuraVilla is a cat homestay or boarding service for pet house
@@ -170,7 +171,13 @@ function Sai() {
                   Facebook
                 </a>
               </Typography>
-              <Typography variant="body">
+              <Typography
+                variant="body"
+                sx={{
+                  color: "#87CEEB",
+                  fontWeight: "800",
+                }}
+              >
                 Please donate how much ever you can to menhir2021@okhdfcbank if
                 you can!
               </Typography>

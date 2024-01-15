@@ -78,7 +78,7 @@ function Sai() {
                 xs: "1.5rem",
                 md: "3rem",
               },
-              color: "#87CEEB",
+              // color: "#87CEEB",
             }}
           >
             Almighty Animal Sanctuary
@@ -168,7 +168,13 @@ function Sai() {
                   Website
                 </a>
               </Typography>
-              <Typography variant="body">
+              <Typography
+                variant="body"
+                sx={{
+                  color: "#87CEEB",
+                  fontWeight: "800",
+                }}
+              >
                 Please donate how much ever you can to
                 AlmightyAnimalCareTrust.ibz@icici !
               </Typography>

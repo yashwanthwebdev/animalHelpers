@@ -143,6 +143,7 @@ function Sai() {
                 variant="body"
                 sx={{
                   letterSpacing: "0.2ch",
+                  color: "#36454F",
                 }}
               >
                 They are an NGO run by two women who rescue injured animals and
@@ -158,7 +159,13 @@ function Sai() {
                   Instagram
                 </a>
               </Typography>
-              <Typography variant="body">
+              <Typography
+                variant="body"
+                sx={{
+                  color: "#87CEEB",
+                  fontWeight: "800",
+                }}
+              >
                 Please donate how much ever you can to prani.62725560@hdfcbank
                 if you can!
               </Typography>
